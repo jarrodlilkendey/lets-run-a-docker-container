@@ -57,9 +57,9 @@ resource "digitalocean_app" "custom_app_github" {
       
       alert {
         rule     = "RESTART_COUNT"
-        value    = 2
+        value    = 1
         operator = "GREATER_THAN"
-        window   = "TEN_MINUTES"
+        window   = "FIVE_MINUTES"
         disabled = false
 
         destinations {
