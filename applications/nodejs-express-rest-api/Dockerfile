@@ -6,13 +6,13 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 WORKDIR /app
 
 # Copy only package files first for better caching
-COPY package.json pnpm-lock.yaml ./
+COPY applications/nodejs-express-rest-api/package.json applications/nodejs-express-rest-api/pnpm-lock.yaml ./
 
 # Install deps (production only)
 RUN pnpm install --frozen-lockfile --prod
 
 # Copy app source
-COPY . .
+COPY applications/nodejs-express-rest-api/. .
 
 EXPOSE 8080
 
