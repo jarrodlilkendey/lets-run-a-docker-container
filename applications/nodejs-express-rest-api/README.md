@@ -1,9 +1,11 @@
 # Node Express REST API
 
-## Instructions
+## Crashing the API with a POST Request
+
+Copy this into browser terminal
 
 ```
-docker build -t selfheal-test .
-docker run -p 8080:8080 --name selfheal selfheal-test
-docker rm selfheal
+fetch("https://selfheal-cloudengineerskills-f2clg.ondigitalocean.app/crash", {
+  method: "POST"
+});
 ```
