@@ -1,0 +1,43 @@
+# node modules
+node_modules/
+.pnpm-store/
+
+# logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files
+.env
+.env.*
+!.env.example
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
+# git
+.git/
+.gitignore
+.gitattributes
+
+# docker
+Dockerfile
+docker-compose.yml
+
+# tests / dev files
+__tests__/
+coverage/
+.vscode/
+.idea/
+
+# local build artifacts
+dist/
+build/
+tmp/
+
+# docs
+README.md
